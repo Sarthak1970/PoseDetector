@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /app
+WORKDIR /Server
 
 RUN apt-get update && apt-get install -y \
     ffmpeg \
@@ -8,10 +8,10 @@ RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+COPY Server/requirements.txt ./
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-COPY . .
+COPY Server/ ./
 
 EXPOSE 8000
 
