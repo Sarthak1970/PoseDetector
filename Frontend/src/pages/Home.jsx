@@ -3,7 +3,7 @@ import FileUploadComponent from '../components/FileUploadComponent';
 import WebcamComponent from '../components/WebcamComponent';
 import AnalysisResults from '../components/AnalysisResults';
 
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = 'https://posedetector.onrender.com';
 
 function App() {
   const [analysis, setAnalysis] = useState(null);
