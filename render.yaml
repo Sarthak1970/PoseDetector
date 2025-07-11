@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-backend
+    env: docker
+    dockerfilePath: ./Server/Dockerfile
+    buildContext: ./Server
+    plan: free

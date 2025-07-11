@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: fastapi-mediapipe
-    env: docker
-    plan: free
-    dockerfilePath: ./Dockerfile
-    region: oregon
